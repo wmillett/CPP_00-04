@@ -22,10 +22,10 @@
          std::cout << "Default animal destructor called" << std::endl;
     };
 
-    std::string Animal::getType(){
+    std::string Animal::getType() const{
         return type;
     };
 
-    void Animal::makeSound(){
+    void Animal::makeSound() const{
        std::cout << "(default animal noise)" << std::endl;
     };
