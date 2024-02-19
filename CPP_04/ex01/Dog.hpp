@@ -5,6 +5,8 @@
 
 class Dog : public Animal{
 
+ private:
+        Brain* inHead;
  public:
         Dog();
         Dog(const std::string newType);

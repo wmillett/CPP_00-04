@@ -25,6 +25,6 @@
     };
 
 
-    void Dog::makeSound(){
+    void Dog::makeSound() const{
        std::cout << "Bark" << std::endl;
     };
