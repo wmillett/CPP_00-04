@@ -6,13 +6,14 @@
           type = "Dog";
           inHead = new Brain();
     };
-    Dog::Dog(const std::string newType) : Animal(newType){
-          std::cout << "Default Dog parameter constructor called" << std::endl;
-          type = "Dog";
-          inHead = new Brain();
-    };
+    // Dog::Dog(const std::string newType) : Animal(newType){
+    //       std::cout << "Default Dog parameter constructor called" << std::endl;
+    //       type = "Dog";
+    //       inHead = new Brain();
+    // };
     Dog::Dog(const Dog& other) : Animal(other){
          std::cout << "Default Dog copy constructor called" << std::endl;
+         inHead = NULL;
         *this = other;
     };
     Dog& Dog::operator=(const Dog& other){

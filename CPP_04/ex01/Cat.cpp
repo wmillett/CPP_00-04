@@ -5,13 +5,14 @@
         type = "Cat";
         inHead = new Brain();
     };
-    Cat::Cat(const std::string newType) : Animal(newType){
-         std::cout << "Default Cat parameter constructor called" << std::endl;
-         type = "Cat";
-         inHead = new Brain();
-    };
+    // Cat::Cat(const std::string newType) : Animal(newType){
+    //      std::cout << "Default Cat parameter constructor called" << std::endl;
+    //      type = "Cat";
+    //      inHead = new Brain();
+    // };
     Cat::Cat(const Cat& other) : Animal(other){
          std::cout << "Default Cat copy constructor called" << std::endl;
+        inHead = NULL;
         *this = other;
     };
     Cat& Cat::operator=(const Cat& other){

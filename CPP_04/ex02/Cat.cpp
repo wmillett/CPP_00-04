@@ -1,17 +1,18 @@
 #include "Cat.hpp"
 
-    Cat::Cat() : Animal(){
+    Cat::Cat() : A_Animal(){
         std::cout << "Default Cat constructor called" << std::endl;
         type = "Cat";
         inHead = new Brain();
     };
-    Cat::Cat(const std::string newType) : Animal(newType){
-         std::cout << "Default Cat parameter constructor called" << std::endl;
-         type = "Cat";
-         inHead = new Brain();
-    };
-    Cat::Cat(const Cat& other) : Animal(other){
+    // Cat::Cat(const std::string newType) : A_Animal(newType){
+    //      std::cout << "Default Cat parameter constructor called" << std::endl;
+    //      type = "Cat";
+    //      inHead = new Brain();
+    // };
+    Cat::Cat(const Cat& other) : A_Animal(other){
          std::cout << "Default Cat copy constructor called" << std::endl;
+         inHead = NULL;
         *this = other;
     };
     Cat& Cat::operator=(const Cat& other){

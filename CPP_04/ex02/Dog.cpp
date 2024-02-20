@@ -1,18 +1,19 @@
 #include "Dog.hpp"
 
 
-   Dog::Dog() : Animal(){
+   Dog::Dog() : A_Animal(){
           std::cout << "Default Dog constructor called" << std::endl;
           type = "Dog";
           inHead = new Brain();
     };
-    Dog::Dog(const std::string newType) : Animal(newType){
-          std::cout << "Default Dog parameter constructor called" << std::endl;
-          type = "Dog";
-          inHead = new Brain();
-    };
-    Dog::Dog(const Dog& other) : Animal(other){
+    // Dog::Dog(const std::string newType) : Animal(newType){
+    //       std::cout << "Default Dog parameter constructor called" << std::endl;
+    //       type = "Dog";
+    //       inHead = new Brain();
+    // };
+    Dog::Dog(const Dog& other) : A_Animal(other){
          std::cout << "Default Dog copy constructor called" << std::endl;
+         inHead = NULL;
         *this = other;
     };
    Dog& Dog::operator=(const Dog& other){
@@ -41,3 +42,4 @@
     void Dog::makeSound() const{
        std::cout << "Bark" << std::endl;
     };
+//

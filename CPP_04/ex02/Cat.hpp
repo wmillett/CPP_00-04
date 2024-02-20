@@ -3,7 +3,7 @@
 
 # include "Animal.hpp"
 
-class Cat : public Animal{
+class Cat : public A_Animal{
 
  private:
         Brain* inHead;

@@ -10,13 +10,13 @@
 
 int main()
 {
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	// const Animal* k = new Animal();
+	const A_Animal* j = new Dog();
+	const A_Animal* i = new Cat();
+	// const A_Animal* k = new A_Animal();
 	
 	delete j;
 	delete i;
-	Animal* a[10];
+	A_Animal* a[10];
 
 	for (int i = 0; i < 5; i++)
 		a[i] = new Cat();
